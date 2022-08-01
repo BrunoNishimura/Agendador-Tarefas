@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
+      "projectUniqueName": "H:\\Repositorios\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
       "projectName": "AgendaTarefas",
-      "projectPath": "H:\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
+      "projectPath": "H:\\Repositorios\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
       "packagesPath": "C:\\Users\\bynis\\.nuget\\packages\\",
-      "outputPath": "H:\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas\\obj\\",
+      "outputPath": "H:\\Repositorios\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
