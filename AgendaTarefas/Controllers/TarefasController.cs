@@ -34,7 +34,7 @@ namespace AgendaTarefas.Controllers
                 data.Identificadores = "collapse" + dataAtual.ToShortDateString().Replace("/", "");
                 listaDatas.Add(data);
                 qtdDias = qtdDias + 1;
-                dataAtual = dataAtual.AddDays(qtdDias);
+                dataAtual = DateTime.Now.AddDays(qtdDias);
             }
 
             return listaDatas;
