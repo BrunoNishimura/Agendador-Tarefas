@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AgendaTarefas"
+    "\\AgendaTarefas",
+    "\\AgendaTarefas\\AgendaTarefas"
   ],
-  "SelectedNode": "\\AgendaTarefas\\AgendaTarefas.sln",
+  "SelectedNode": "\\AgendaTarefas\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
