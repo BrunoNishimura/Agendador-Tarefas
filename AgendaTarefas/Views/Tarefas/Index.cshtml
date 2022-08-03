@@ -4,7 +4,7 @@
     ViewData["Title"] = "Tarefas Cadastradas";
 }
 
-@foreach(var item in Model)
+@*@foreach(var item in Model)
 {
     <div class="accordion" id="painelTarefas">
         <div class="card">
@@ -24,6 +24,31 @@
             <div id="@item.Identificadores" class="collapse show" data-parent="#painelTarefas">
                 <div class="card-body">
                     VIEW COMPONENT
+                </div>
+            </div>
+        </div>
+    </div>
+}*@
+@foreach(var item in Model)
+{
+    <div class="accordion" id="painelTarefas">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-10">
+                        <a class="btn btn-link btn-block text-left" href="#@item.Identificadores" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="@item.Identificadores">
+                            @item.Datas
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a asp-action="CriarTarefa" asp-route-dataTarefa="@item.Datas" class="btn btn-sm btn-outline-dark">Nova Tarefa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="@item.Identificadores" class="collapse" data-parent="#painelTarefas">
+                <div class="card-body">
+                  VIEW COMPONENT
                 </div>
             </div>
         </div>
