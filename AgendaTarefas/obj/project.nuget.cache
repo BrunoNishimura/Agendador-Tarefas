@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QLt/O16QwN0R/WkrG1VMNMalSgU6fM+GXmtjfubjyIrZhScm7ti2bo/f5DIloPA3rdDfifR9IRppzixzgc4xKA==",
+  "dgSpecHash": "B4h/vElr27Y9cYRlwdlU/4v4I+FrzxNxFIrNneYM9ud66WgX1X9IIoTQwbvs1ga20t+5OuGuYEIqFCuIB0g3WA==",
   "success": true,
-  "projectFilePath": "H:\\Repositorios\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas\\AgendaTarefas.csproj",
+  "projectFilePath": "H:\\Repositorios\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bynis\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\bynis\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -48,12 +48,5 @@
     "C:\\Users\\bynis\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\bynis\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file H:\\Repositorios\\Agendador-Tarefas\\AgendaTarefas\\AgendaTarefas\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
