@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using AgendaTarefas.Models;
 
-namespace AgendaTarefas.AgendaTarefas
+namespace AgendaTarefas.Controllers
 {
     public class TarefasController : Controller
     {
         private readonly Contexto _contexto;
-        
+
         public TarefasController(Contexto contexto)
         {
             _contexto = contexto;
@@ -27,7 +27,7 @@ namespace AgendaTarefas.AgendaTarefas
             DatasViewModel data;
             List<DatasViewModel> listaDatas = new List<DatasViewModel>();
 
-            while(dataAtual < dataLimite)
+            while (dataAtual < dataLimite)
             {
                 data = new DatasViewModel();
                 data.Datas = dataAtual.ToShortDateString();
