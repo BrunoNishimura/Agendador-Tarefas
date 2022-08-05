@@ -4,31 +4,7 @@
     ViewData["Title"] = "Tarefas Cadastradas";
 }
 
-@*@foreach(var item in Model)
-{
-    <div class="accordion" id="painelTarefas">
-        <div class="card">
-            <div class="card-header">
-                <div class="col-10">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#@item.Identificadores">
-                        @item.Datas
-                    </button>
-                </div>
-                <div>
-                    <a asp-action="CriarTarefa" asp-route-dataTarefa="@item.Datas" class="btn btn-sm btn-outline-dark">
-                        Nova Tarefa
-                    </a>
-                </div>
-            </div>
 
-            <div id="@item.Identificadores" class="collapse show" data-parent="#painelTarefas">
-                <div class="card-body">
-                    VIEW COMPONENT
-                </div>
-            </div>
-        </div>
-    </div>
-}*@
 @foreach(var item in Model)
 {
     <div class="accordion" id="painelTarefas">
@@ -48,7 +24,7 @@
 
             <div id="@item.Identificadores" class="collapse" data-parent="#painelTarefas">
                 <div class="card-body">
-                  VIEW COMPONENT
+                  @await Component.InvokeAsync("ListaTarefas", item.Datas)
                 </div>
             </div>
         </div>
