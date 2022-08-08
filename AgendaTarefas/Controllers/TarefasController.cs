@@ -39,5 +39,26 @@ namespace AgendaTarefas.Controllers
 
             return listaDatas;
         }
+        [HttpGet]
+        public IActionResult CriarTarefa(string dataTarefa)
+        {
+            Tarefa tarefa = new Tarefa
+            {
+                Data = dataTarefa
+            };
+
+            return View(tarefa);
+        }
+        [HttpPost]
+        public async Task<IActionResult> CriarTarefa(Tarefa tarefa)
+        {
+            if (ModelState.IsValid)
+            {
+                _contexto.Tarefas.Add(tarefa);
+                await _contexto.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(tarefa);
+        }
     }
 }
