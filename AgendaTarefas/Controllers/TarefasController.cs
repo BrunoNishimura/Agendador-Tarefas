@@ -39,6 +39,8 @@ namespace AgendaTarefas.Controllers
 
             return listaDatas;
         }
+
+        //Criar Tarefas: Aula 6
         [HttpGet]
         public IActionResult CriarTarefa(string dataTarefa)
         {
@@ -60,7 +62,7 @@ namespace AgendaTarefas.Controllers
             }
             return View(tarefa);
         }
-
+        //Atualizar Tarefas: Aula 8
         [HttpGet]
         public async Task<IActionResult> AtualizarTarefa(int tarefaId)
         {
