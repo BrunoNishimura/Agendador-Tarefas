@@ -60,5 +60,28 @@ namespace AgendaTarefas.Controllers
             }
             return View(tarefa);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> AtualizarTarefa(int tarefaId)
+        {
+            Tarefa tarefa = await _contexto.Tarefas.FindAsync(tarefaId);
+
+            if (tarefa == null)
+                return NotFound();
+
+            return View(tarefa);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AtualizarTarefa(Tarefa tarefa)
+        {
+            if (ModelState.IsValid)
+            {
+                _contexto.Update(tarefa);
+                await _contexto.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(tarefa);
+        }
     }
 }
