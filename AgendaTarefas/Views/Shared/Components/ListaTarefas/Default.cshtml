@@ -13,7 +13,7 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-2">
-                           <span class="badge bg-success">@Html.DisplayFor(modelItem => item.Horario)</span>
+                            <span class="badge bg-success">@Html.DisplayFor(modelItem => item.Horario)</span>
                         </div>
 
                         <div class="col-6">
@@ -24,14 +24,13 @@
                             <a asp-action="AtualizarTarefa" asp-route-tarefaId="@item.TarefaId" class="btn btn-sm btn-outline-primary rounded-circle">
                                 <i class="fa fa-pencil-square-o"></i>
                             </a>
-                            <a class="btn btn-sm btn-outline-danger rounded-circle">
+                            <a href="#" class="btn btn-sm btn-outline-danger rounded-circle" onclick="ConfirmarExclusao(@item.TarefaId, '@item.Nome')">
                                 <i class="fa fa-times-circle"></i>
                             </a>
                         </div>
                     </div>
                 </li>
             }
-
         </ul>
     }
     else
