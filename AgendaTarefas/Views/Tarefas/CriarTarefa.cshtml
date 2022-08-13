@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-12">
             <div class="card">
                 <text class="card-header">Nova tarefa na data @Model.Data</text>
                 <form asp-action="CriarTarefa">
@@ -25,11 +25,16 @@
                             <input asp-for="Horario" class="form-control" />
                             <span asp-validation-for="Horario" class="text-danger"></span>
                         </div>
-
+                        &emsp;
                         <div class="card-footer">
                             <div class="form-group">
-                                <input type="submit" value="Salvar" class="btn btn-outline-sucess btn-sm" /> &emsp;
-                                <a asp-action="Index" class="btn btn-link btn-sm">Voltar </a>
+                                <a asp-action="Index" class="btn btn-sm btn-outline-secondary rounded-square">
+                                    <i class="fa fa-arrow-circle-o-left"></i> Voltar
+                                </a>
+
+                                <button type="submit" value="Salvar" class="btn btn-sm btn-outline-primary rounded-square" >
+                                    <i class="fa fa-floppy-o"></i> Salvar
+                                </button>
                             </div>
 
                         </div>
