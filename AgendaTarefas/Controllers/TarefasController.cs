@@ -86,11 +86,11 @@ namespace AgendaTarefas.Controllers
             return View(tarefa);
         }
 
-        //Aula 10: Exclusão de Tarefas (Por ser exclusão ele só possui o Post!)
-            //Observasão: A exclusão será feita em Ajax!
+        //Aula 10: Exclusão de Tarefas(Por ser exclusão ele só possui o Post!)
+        //Observasão: A exclusão será feita em Ajax!
+
+        //Precisa do ID da tarefa(int tarefaId), para identificar qual tarefas queremos excluir! 
         [HttpPost]
-        
-        //Precisa do ID da tarefa (int tarefaId), para identificar qual tarefas queremos excluir! 
         public async Task<JsonResult> ExcluirTarefa(int tarefaId)
         {
             //Pegando a Tarefa
@@ -100,6 +100,7 @@ namespace AgendaTarefas.Controllers
             //Salvando a transação no banco de dados
             await _contexto.SaveChangesAsync();
             return Json(true);
-        } 
+        }
+
     }
 }
