@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col6">
+        <div class="col-12">
             <div class="card">
                 <text class="card-header">Atualizar tarefa na data @Model.Data</text>
                 <form asp-action="AtualizarTarefa">
@@ -20,7 +20,7 @@
                             <span asp-validation-for="Nome" class="text-danger"></span>
                         </div>
 
-                            <input asp-for="Data" class="form-control" type="hidden"/>
+                        <input asp-for="Data" class="form-control" type="hidden" />
 
                         <div class="form-group">
                             <label asp-for="Horario" class="control-label"></label>
@@ -31,8 +31,12 @@
 
                     <div class="card-footer">
                         <div class="form-group">
-                            <input type="submit" value="Atualizar" class="btn btn-sm btn-outline-primary" /> &emsp;
-                            <a asp-action="Index" class="btn btn-sm btn-link">Voltar</a>
+                            <a asp-action="Index" class="btn btn-sm btn-outline-secondary rounded-square">
+                                <i class="fa fa-arrow-circle-o-left"></i> Voltar
+                            </a>
+                            <button type="submit" value="Atualizar" class="btn btn-sm btn-outline-primary rounded-square">
+                                <i class="fa fa-refresh"></i> Atualizar
+                            </button>
                         </div>
                     </div>
                 </form>
