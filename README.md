@@ -21,8 +21,7 @@
     Playlist
   </a>
 </p>
-<hr/>
- 
+
 ## 💻 Projeto
 
 Criação de um agendador de tarefas com .NET CORE MVC.
@@ -30,7 +29,7 @@ Criação de um agendador de tarefas com .NET CORE MVC.
 ### Tópicos
 
 <details open>
-  <summary><b>Aula 1</b> - Configuração Ambiente e Criação da Model - :heavy_check_mark:</summary>
+  <summary><b>Aula 1: </b>Configuração Ambiente e Criação da Model - :heavy_check_mark:</summary>
   
    - [x] Criação do Projeto no Visual Studio: ASP.NET Core Web Application (MVC);
    - [x] Criação da primeira Model: Com o botão direito, adicionar novo item (Tarefa.cs);
@@ -39,7 +38,7 @@ Criação de um agendador de tarefas com .NET CORE MVC.
 </details>
 
 <details>
-  <summary><b>Aula 2</b> - Instalação de Libs, Criação do Contexto e Criação do Banco de Dados. - :heavy_check_mark:</summary>
+  <summary><b>Aula 2: </b>Instalação de Libs, Criação do Contexto e Criação do Banco de Dados. - :heavy_check_mark:</summary>
   
   - [x] Instalação de 4 Bibliotecas 'Microsoft.EntityFrameworkCore' através do 'Manage NuGet Packages' , observar no arquivo AgendaTarefas.csproj;
   - [x] Configuração do ConnectionString no arquivo appsettings.json;
@@ -53,7 +52,7 @@ Criação de um agendador de tarefas com .NET CORE MVC.
 </details>
 
 <details>
-  <summary><b>Aula 3</b> - Criação de uma Model e do seu Controller - :heavy_check_mark:</summary>
+  <summary><b>Aula 3: </b>Criação de uma Model e do seu Controller - :heavy_check_mark:</summary>
   
    - [x] Criação do arquivo DatasViewModel.cs para nos auxiliar na manipulação das Datas;
      - Datas
@@ -62,7 +61,7 @@ Criação de um agendador de tarefas com .NET CORE MVC.
 </details>
 
 <details>
-  <summary><b>Aula 4</b> - Criação da View, os primeiros componentes da tela - :heavy_check_mark:</summary>
+  <summary><b>Aula 4: </b>Criação da View, os primeiros componentes da tela - :heavy_check_mark:</summary>
   
    - [x] Foi criado dentro da Pasta View utilizando o Add Razor View:
      - View name: Index;
@@ -75,7 +74,7 @@ Criação de um agendador de tarefas com .NET CORE MVC.
 </details>
 
 <details>
-  <summary><b>Aula 5</b> - Criação da ViewComponent - :heavy_check_mark:</summary>
+  <summary><b>Aula 5: </b>Criação da ViewComponent - :heavy_check_mark:</summary>
   
    - [x] Foi criado a Pasta ViewComponents:
      - Dentro desta pasta foi criada uma class que herdar o ViewComponent;
@@ -87,34 +86,34 @@ Criação de um agendador de tarefas com .NET CORE MVC.
 </details>
 
 <details>
-  <summary><b>Aula 6</b> - Criação de uma Tarefa - :heavy_check_mark:</summary>
+  <summary><b>Aula 6: </b>Criação de uma Tarefa - :heavy_check_mark:</summary>
   
    - [x] Foi realizado o algoritmo e a lógica para CriarTarefa no arquivo 'TarefasController.cs'
      - Utilizando os [HttpGet] e o [HttpPost];
 </details>
 
 <details>
-  <summary><b>Aula 7</b> - Criação e Customização de uma View para Criação de Tarefas - :heavy_check_mark:</summary>
+  <summary><b>Aula 7: </b>Criação e Customização de uma View para Criação de Tarefas - :heavy_check_mark:</summary>
   
    - [x] Foi criado uma View para a lógica de Criação de Tarefas realizado na Aula 6
      - View > CriarTarefa.cshtml;
 </details>
 
 <details>
-  <summary><b>Aula 8</b> - Atualizando uma Tarefa - :heavy_check_mark:</summary>
+  <summary><b>Aula 8: </b>Atualizando uma Tarefa - :heavy_check_mark:</summary>
   
    - [x] Foi realizado o algoritmo e a lógica para AtualizarTarefa no arquivo 'TarefasController.cs'
      - Utilizando os [HttpGet] e o [HttpPost];
 </details>
 
 <details>
-  <summary><b>Aula 9</b> - Criação de uma View para a tela de Atualizar Tarefas - :heavy_check_mark:</summary>
+  <summary><b>Aula 9: </b>Criação de uma View para a tela de Atualizar Tarefas - :heavy_check_mark:</summary>
   
    - [x] Foi criado a tela para a atualização da tarefa no arquivo 'AtualizarTarefa.cshtml';
 </details>
 
 <details>
-  <summary><b>Aula 10</b> - Exclusão de tarefas - :heavy_check_mark:</summary>
+  <summary><b>Aula 10: </b>Exclusão de tarefas - :heavy_check_mark:</summary>
   
    - [x] Foi criado a lógica e o algoritmo para exclusão das tarefas selecionadas;
    - [x] Foi criado uma modal através do bootstrap v5;
