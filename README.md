@@ -44,9 +44,9 @@ Criação de um agendador de tarefas com .NET CORE MVC.
   - [x] Configuração do ConnectionString no arquivo appsettings.json;
   - [x] Criação e configuração do Startup.cs;
   - [x] Configuração do Program.cs para adaptação do Startup.cs;
-  - [x] Criando uma Migrations e nomeando ele através do 'Package Manager Console', com o comando:
+  - [x] Criando uma Migrations e nomeando ele através do 'Package Manager Console', com o comando:</br>
   `add-migrations criacaoBD`
-  - [x] Criando um banco de dados através do 'Package Manager Console', com o comando: 
+  - [x] Criando um banco de dados através do 'Package Manager Console', com o comando:</br>
   `update-database`
   - [x] Checar e Visualizar o Banco criado em: 'SQL Server Object Explorer';
 </details>
